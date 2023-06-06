@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+    font-family: 'Jost', sans-serif;
+    color: white;
+    text-decoration: solid;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+#marcdor{
+    color: black;
+}
+.div1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgb(164, 17, 152);
+    height: 600px;
+    border-radius: 2%;
+    border: solid black 10px;
+    width: 500px;
+    justify-content: center;
+}
+.images-container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.images-container img {
+    margin: 0 10px;
+}
+.probar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.imge{
+    width: 200px;
+}
+.button {
+    font-size: 20px;
+    height: 80px;
+    width: 160px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: #ffcc00;
+    color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
+    transition: transform 0.3s;
+    font-family: 'Courier New', monospace;
+    position: relative;
+    overflow: hidden;
+    animation: colorChange 4s infinite;
+    border: none;
+    text-decoration: double;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: rgb(89, 0, 255);
+  }
+  25% {
+    background-color: rgb(255, 0, 230);
+  }
+  50% {
+    background-color: rgb(11, 253, 11);
+  }
+  75% {
+    background-color:  yellow;
+  }
+  100% {
+    background-color: rgb(250, 0, 254);
+  }
+}
+
+.button:hover {
+    transform: scale(1.02);
+}
+
+option{
+    color: black;
+} 
+.no{
+    display: none;
+}
+@media (max-width: 800px){
+    .div1{
+        padding-top: 30%;
+        position: fixed;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    .imge{
+        width: 160px;
+    }
+    .button{
+        width: 120px;
+    }
+}
+
+

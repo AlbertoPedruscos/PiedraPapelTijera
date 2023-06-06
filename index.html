@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="div1">
+        <div>
+            <br>
+            <h1>Piedra, papel o tijera</h1>
+        </div>
+        <div>
+            <h2 id="marcador">0 - 0</h2>
+            <h2 id="resultado">Juega ya!</h2>
+        </div>
+        <div class="images-container">
+            <img id="img1" src="misterio.png" class="imge">
+            <img id="img2" src="misterio.png" class="imge">
+        </div>
+        <br>
+        <br>
+        <div class="probar">
+            <form id="juego-form">
+                <div>
+                    <button class="button" id="piedra" name="opcion" value="1" onclick="seleccionarOpcion(1)">Piedra</button>
+                    <button class="button" id="papel" name="opcion" value="2" onclick="seleccionarOpcion(2)">Papel</button>
+                    <button class="button" id="tijera" name="opcion" value="3" onclick="seleccionarOpcion(3)">Tijera</button>
+                </div>
+                <button class="no" id="vamos" name="vamos" onclick="juego()">Confirmar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
